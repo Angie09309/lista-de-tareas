@@ -1,7 +1,6 @@
 .tarea-contenedor {
   width: 500px;
   min-height: 65px;
-  background-color: #457ea3;
   margin: 10px 0;
   padding: 8px 15px 15px 20px;
   display: flex;
@@ -17,6 +16,18 @@
 .tarea-contenedor:hover {
   background-color: #5f7fa7;
   box-shadow: 0 0 10px rgba(0, 229, 255, 0.8);
+}
+
+.tarea-contenedor:nth-child(3n + 1) {
+  background-color: #a1d8d9;
+}
+
+.tarea-contenedor:nth-child(3n + 2) {
+  background-color: #63898c;
+}
+
+.tarea-contenedor:nth-child(3n + 3) {
+  background-color: #015366;
 }
 
 .tarea-texto {
