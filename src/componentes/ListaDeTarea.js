@@ -20,7 +20,12 @@ const ListaDeTarea = () => {
       <TareaFormulario onSubmit={agregarTarea} />
       <div className="tarea-lista-contenedor">
         {tareas.map((tarea) => (
-          <Tarea texto={tarea.texto} completada={tarea.completada} />
+          <Tarea
+            key={tarea.id}
+            id={tarea.id}
+            texto={tarea.texto}
+            completada={tarea.completada}
+          />
         ))}
       </div>
     </>
